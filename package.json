@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "nodemon app.js",
     "start": "node app.js",
+    "worker:dev": "wrangler dev",
+    "worker:deploy": "wrangler deploy",
     "test": "mocha -r intelli-espower-loader -t 60000 server.test.js main.test.js --exit",
     "lint": "eslint \"**/*.{js,ts}\"",
     "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
@@ -95,7 +97,7 @@
     "@eslint/eslintrc": "^3.3.5",
     "@eslint/js": "^9.39.4",
     "@types/express": "^5.0.6",
-    "@types/express-fileupload": "^1.5.1",
+    "@types/express-fileupload": "^5.1.1",
     "@types/mocha": "^10.0.10",
     "@types/node": "25.9.2",
     "@typescript-eslint/eslint-plugin": "^8.61.1",
@@ -113,7 +115,8 @@
     "pkg": "^5.8.1",
     "power-assert": "^1.6.1",
     "prettier": "^3.8.4",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "wrangler": "^4.0.0"
   },
   "publishConfig": {
     "access": "public",
